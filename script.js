@@ -4,17 +4,30 @@ const singUpCard = document.getElementById("card-signup");
 const successCard = document.getElementById("card-success");
 const errorMessage = document.getElementById("error-message");
 const successMessage = document.getElementById("success-message");
+const form = document.getElementById("form");
+const dismissBtn = document.getElementById("dismiss-button");
 
-submitBtn.addEventListener("submit", () => {
+const handleSubmit = (event) => {
+  event.preventDefault();
   const inputValue = emailInput.value;
 
   if (inputValue.includes("@gmail.com")) {
-    singUpCard.classList.toggle("hidden");
-    successCard.classList.toggle("hidden");
+    singUpCard.classList.add("hidden");
+    successCard.classList.remove("hidden");
+    emailInput.classList.remove("error");
     successMessage.textContent = inputValue;
+    errorMessage.classList.add("hidden");
   } else {
-    console.log("error");
-    errorMessage.classList.toggle("hidden");
-    emailInput.classList.toggle("error");
+    errorMessage.classList.remove("hidden");
+    emailInput.classList.add("error");
   }
-});
+};
+
+const handleReturn = () => {
+  singUpCard.classList.remove("hidden");
+  successCard.classList.add("hidden");
+  emailInput.value = "";
+};
+
+form.addEventListener("submit", handleSubmit);
+dismissBtn.addEventListener("click", handleReturn);

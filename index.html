@@ -38,10 +38,12 @@
             </li>
           </ul>
 
-          <form novalidate">
+          <form novalidate id="form">
             <div class="form__label-info">
               <label for="email" class="form__label">Email address</label>
-              <span class="form__error-message hidden" id="error-message">Valid email required</span>
+              <span class="form__error-message hidden" id="error-message"
+                >Valid email required</span
+              >
             </div>
             <div class="form__active-elements">
               <input
@@ -53,7 +55,7 @@
               />
               <button
                 class="form__subscribe-button"
-                type="button"
+                type="submit"
                 id="button-submit"
               >
                 Subscribe to monthly newsletter
@@ -76,14 +78,23 @@
       </article>
 
       <article class="card-success hidden" id="card-success">
-        <img class="card-success__icon" src="./assets/images/icon-success.svg" alt="" />
+        <img
+          class="card-success__icon"
+          src="./assets/images/icon-success.svg"
+          alt=""
+        />
         <h1 class="success-card__title">Thanks for subscribing!</h1>
         <p class="success-card__text">
           A confirmation email has been to
-          <span class="success-card__email" id="success-message">email</span>. Please open it and
-          click the button inside to confirm your subscription
+          <span class="success-card__email" id="success-message">email</span>.
+          Please open it and click the button inside to confirm your
+          subscription
         </p>
-        <button class="card-success__dismiss-button" type="button">
+        <button
+          class="card-success__dismiss-button"
+          id="dismiss-button"
+          type="submit"
+        >
           Dismiss message
         </button>
       </article>
