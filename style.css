@@ -94,10 +94,27 @@ main {
 
         .form__subscribe-button {
           font-weight: 700;
+          border: none;
           background: var(--color-blue-800);
           color: var(--color-white);
         }
+
+        .form__input:focus {
+          outline: none;
+          border: 1px solid black;
+        }
+
+        .form__subscribe-button:hover {
+          background: var(--color-red);
+          box-shadow: 0rem 1.5rem 2rem hsla(4, 100%, 67%, 0.373);
+        }
       }
+    }
+  }
+  picture {
+    > img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
