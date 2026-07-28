@@ -2,6 +2,7 @@ const emailInput = document.getElementById("email");
 const submitBtn = document.getElementById("button-submit");
 const singUpCard = document.getElementById("card-signup");
 const successCard = document.getElementById("card-success");
+const errorMessage = document.getElementById("error-message");
 
 submitBtn.addEventListener("click", () => {
   const inputValue = emailInput.value;
@@ -10,11 +11,16 @@ submitBtn.addEventListener("click", () => {
 
   if (inputValue.includes("@gmail.com")) {
     console.log("great");
-    // adds class success
-  } else {
-    console.log("error");
     singUpCard.classList.toggle("hidden");
     successCard.classList.toggle("hidden");
+    // adds class success
+
+  } else {
+    console.log("error");
+    errorMessage.classList.toggle("hidden");
+    emailInput.classList.toggle("error")
+
+
     //adds class error
   }
 });
