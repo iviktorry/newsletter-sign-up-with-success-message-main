@@ -241,8 +241,14 @@ main {
     padding: 1rem;
   }
   main {
+    .card-signup,
+    .card-success {
+      max-width: 24.1rem;
+      width: 100%;
+      min-height: 43.75rem;
+    }
+
     .card-signup {
-      max-width: 100%;
       padding: 0;
       border-radius: 0;
 
@@ -276,6 +282,26 @@ main {
           display: block;
           height: auto;
         }
+      }
+    }
+
+    .card-success {
+      border-radius: 0;
+      /* min-height: 100vh; */
+      padding: 30% 1rem 2rem;
+
+      .card-success {
+        font-size: 2rem;
+      }
+
+      .success-card__text {
+        font-size: 1rem;
+        flex: auto;
+      }
+
+      .card-success__dismiss-button {
+        font-size: 0.75rem;
+        padding: 0.75rem 1rem;
       }
     }
   }
