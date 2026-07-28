@@ -246,14 +246,17 @@ main {
 @media (max-width: 768px) {
   body {
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 0;
   }
   main {
+    height: 100%;
     .card-signup,
     .card-success {
-      max-width: 24.1rem;
+      /* max-width: 24.1rem; */
+      max-width: 100%;
       width: 100%;
       min-height: 43.75rem;
+      height: 100%;
     }
 
     .card-signup {
