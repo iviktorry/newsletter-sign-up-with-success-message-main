@@ -295,7 +295,6 @@ main {
 
     .card-success {
       border-radius: 0;
-      /* min-height: 100vh; */
       padding: 30% 1rem 2rem;
 
       .card-success {
