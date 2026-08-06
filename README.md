@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](image.png)
+![alt text](./assets/images/image.png)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/iviktorry/newsletter-sign-up-with-success-message-main)
-- Live Site URL: [newsletter-sign-up-with-success-message-main](https://iviktorry.github.io/newsletter-sign-up-with-success-message-main/)
+- Live Site URL: [Site](https://newsletter-sign-up-rose-eight.vercel.app/)
 
 ## My process
 
@@ -56,4 +56,4 @@ In this project, I refreshed and solidified several key frontend development con
 ## Author
 
 - GitHub - [@iviktorry](https://www.your-site.com)
-- Frontend Mentor - [@iviktorry](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@iviktorry](https://www.frontendmentor.io/profile/iviktorry)
